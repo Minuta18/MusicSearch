@@ -1,2 +1,2 @@
 # MusicSearch
-Application to search songs by music or lyrics   
+Application to search for songs by music or lyrics   
