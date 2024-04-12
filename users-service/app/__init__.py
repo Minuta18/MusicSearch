@@ -5,6 +5,7 @@ from sqlalchemy import orm
 import logging
 import dotenv
 import asyncio
+import base_library
 
 dotenv.load_dotenv('./.env')
 
@@ -25,12 +26,5 @@ DATABASE_URL = 'postgresql+asyncpg://{}:{}@{}:{}/{}'.format(
 OPENAPI_URL = '{}/{}/openapi.json'.format(PREFIX, SERVICE_NAME)
 DOCS_URL = '{}/{}/docs'.format(PREFIX, SERVICE_NAME)
 
-engine = ext.asyncio.create_async_engine(DATABASE_URL)
-base = declarative.declarative_base()
-session = orm.sessionmaker(
-    bind=engine,
-    class_=ext.asyncio.AsyncSession,
-    expire_on_commit=False
-)
-
+engine, session = base_library.database.init_connection(DATABASE_URL)
 logger = logging.getLogger(__name__)
