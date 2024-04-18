@@ -1,0 +1,133 @@
+ 2024-04-17 11:07:18,401 INFO: Will watch for changes in these directories: ['/app']
+2024-04-17 11:07:18,401 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-17 11:07:18,401 INFO: Started reloader process [1] using StatReload
+2024-04-17 11:07:18,505 ERROR: Error loading ASGI app. Could not import module "main".
+2024-04-17 11:08:34,128 INFO: Stopping reloader process [1]
+2024-04-17 11:12:02,395 INFO: Will watch for changes in these directories: ['/app']
+2024-04-17 11:12:02,396 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-17 11:12:02,396 INFO: Started reloader process [1] using StatReload
+2024-04-17 11:12:05,641 INFO: Stopping reloader process [1]
+2024-04-17 11:13:32,058 INFO: Will watch for changes in these directories: ['/app']
+2024-04-17 11:13:32,058 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-17 11:13:32,058 INFO: Started reloader process [1] using StatReload
+2024-04-17 11:13:35,042 INFO: Stopping reloader process [1]
+2024-04-17 11:14:38,046 INFO: Will watch for changes in these directories: ['/app']
+2024-04-17 11:14:38,046 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-17 11:14:38,046 INFO: Started reloader process [1] using StatReload
+2024-04-17 11:14:46,624 INFO: Stopping reloader process [1]
+2024-04-17 11:19:51,955 INFO: Will watch for changes in these directories: ['/app']
+2024-04-17 11:19:51,955 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-17 11:19:51,955 INFO: Started reloader process [1] using StatReload
+2024-04-17 11:19:55,582 INFO: Stopping reloader process [1]
+2024-04-18 07:45:19,614 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 07:45:19,615 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 07:45:19,615 INFO: Started reloader process [1] using StatReload
+2024-04-18 07:45:23,417 INFO: Stopping reloader process [1]
+2024-04-18 08:12:00,358 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:12:00,359 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:12:00,359 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:12:05,067 INFO: Stopping reloader process [1]
+2024-04-18 08:13:15,545 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:13:15,545 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:13:15,546 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:13:20,327 INFO: Stopping reloader process [1]
+2024-04-18 08:14:23,888 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:14:23,888 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:14:23,889 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:14:31,008 INFO: Stopping reloader process [1]
+2024-04-18 08:15:57,146 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:15:57,146 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:15:57,147 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:16:02,074 INFO: Stopping reloader process [1]
+2024-04-18 08:18:45,926 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:18:45,926 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:18:45,927 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:18:50,698 INFO: Stopping reloader process [1]
+2024-04-18 08:19:33,966 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:19:33,966 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:19:33,966 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:19:43,221 INFO: Stopping reloader process [1]
+2024-04-18 08:22:24,780 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:22:24,781 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:22:24,781 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:23:06,159 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:23:06,160 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:23:06,160 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:23:07,798 INFO: Started server process [8]
+2024-04-18 08:23:07,799 INFO: Waiting for application startup.
+2024-04-18 08:23:07,799 INFO: Application startup complete.
+2024-04-18 08:24:37,937 INFO: 172.18.0.5:38746 - "GET /api/v1/tracks/docs HTTP/1.0" 200
+2024-04-18 08:24:39,643 INFO: 172.18.0.5:35474 - "GET /api/v1/tracks/openapi.json HTTP/1.0" 200
+2024-04-18 08:25:28,901 INFO: 172.18.0.5:46050 - "GET /api/v1/tracks/docs HTTP/1.0" 200
+2024-04-18 08:25:29,352 INFO: 172.18.0.5:42406 - "GET /api/v1/tracks/openapi.json HTTP/1.0" 200
+2024-04-18 08:29:31,329 INFO: 172.18.0.5:45134 - "GET /api/v1/tracks/docs HTTP/1.0" 200
+2024-04-18 08:29:31,878 INFO: 172.18.0.5:45148 - "GET /api/v1/tracks/openapi.json HTTP/1.0" 200
+2024-04-18 08:29:58,096 INFO: 172.18.0.5:40664 - "GET /api/v1/tracks/openapi.json HTTP/1.0" 200
+2024-04-18 08:30:45,384 INFO: 172.18.0.5:36578 - "GET /api/v1/tracks/docs HTTP/1.0" 200
+2024-04-18 08:30:45,938 INFO: 172.18.0.5:36584 - "GET /api/v1/tracks/openapi.json HTTP/1.0" 200
+2024-04-18 08:32:17,703 INFO: Shutting down
+2024-04-18 08:32:17,804 INFO: Waiting for application shutdown.
+2024-04-18 08:32:17,805 INFO: Application shutdown complete.
+2024-04-18 08:32:17,805 INFO: Finished server process [8]
+2024-04-18 08:32:17,817 INFO: Stopping reloader process [1]
+2024-04-18 08:37:07,602 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:37:07,602 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:37:07,603 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:37:09,364 INFO: Started server process [8]
+2024-04-18 08:37:09,364 INFO: Waiting for application startup.
+2024-04-18 08:37:09,365 INFO: Application startup complete.
+2024-04-18 08:38:36,659 INFO: Shutting down
+2024-04-18 08:38:36,759 INFO: Waiting for application shutdown.
+2024-04-18 08:38:36,760 INFO: Application shutdown complete.
+2024-04-18 08:38:36,760 INFO: Finished server process [8]
+2024-04-18 08:38:36,776 INFO: Stopping reloader process [1]
+2024-04-18 08:39:56,955 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:39:56,955 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:39:56,956 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:39:58,998 INFO: Started server process [8]
+2024-04-18 08:39:58,998 INFO: Waiting for application startup.
+2024-04-18 08:39:58,998 INFO: Application startup complete.
+2024-04-18 08:45:46,139 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:45:46,139 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:45:46,140 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:45:47,834 INFO: Started server process [9]
+2024-04-18 08:45:47,834 INFO: Waiting for application startup.
+2024-04-18 08:45:47,835 INFO: Application startup complete.
+2024-04-18 08:48:12,130 INFO: Shutting down
+2024-04-18 08:48:12,231 INFO: Waiting for application shutdown.
+2024-04-18 08:48:12,231 INFO: Application shutdown complete.
+2024-04-18 08:48:12,231 INFO: Finished server process [9]
+2024-04-18 08:48:12,239 INFO: Stopping reloader process [1]
+2024-04-18 08:48:28,929 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:48:28,929 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:48:28,929 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:48:30,881 INFO: Started server process [8]
+2024-04-18 08:48:30,882 INFO: Waiting for application startup.
+2024-04-18 08:48:30,883 INFO: Application startup complete.
+2024-04-18 08:49:09,120 INFO: Shutting down
+2024-04-18 08:49:09,221 INFO: Waiting for application shutdown.
+2024-04-18 08:49:09,222 INFO: Application shutdown complete.
+2024-04-18 08:49:09,222 INFO: Finished server process [8]
+2024-04-18 08:49:09,229 INFO: Stopping reloader process [1]
+2024-04-18 08:49:26,735 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 08:49:26,736 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 08:49:26,736 INFO: Started reloader process [1] using StatReload
+2024-04-18 08:49:28,617 INFO: Started server process [8]
+2024-04-18 08:49:28,618 INFO: Waiting for application startup.
+2024-04-18 08:49:28,618 INFO: Application startup complete.
+2024-04-18 09:11:18,593 INFO: Shutting down
+2024-04-18 09:11:18,694 INFO: Waiting for application shutdown.
+2024-04-18 09:11:18,694 INFO: Application shutdown complete.
+2024-04-18 09:11:18,695 INFO: Finished server process [8]
+2024-04-18 09:11:18,702 INFO: Stopping reloader process [1]
+2024-04-18 09:11:38,934 INFO: Will watch for changes in these directories: ['/app']
+2024-04-18 09:11:38,935 INFO: Uvicorn running on http://0.0.0.0:6002 (Press CTRL+C to quit)
+2024-04-18 09:11:38,935 INFO: Started reloader process [1] using StatReload
+2024-04-18 09:11:40,791 INFO: Started server process [8]
+2024-04-18 09:11:40,791 INFO: Waiting for application startup.
+2024-04-18 09:11:40,792 INFO: Application startup complete.
+2024-04-18 09:15:46,522 INFO: Shutting down
+2024-04-18 09:15:46,622 INFO: Waiting for application shutdown.
+2024-04-18 09:15:46,623 INFO: Application shutdown complete.
+2024-04-18 09:15:46,623 INFO: Finished server process [8]
+2024-04-18 09:15:46,636 INFO: Stopping reloader process [1]

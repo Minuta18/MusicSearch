@@ -3,3 +3,9 @@
 __pycache__
 users-service/base_library
 auth-service/base_library
+tracks-service/base_library
+volumes/nginx/sites-enabled
+volumes/nginx/ssl
+volumes/nginx/var
+volumes/postgres-admin/data
+volumes/postgresql/data

@@ -1,10 +1,6 @@
 from os import environ
-from sqlalchemy.ext import declarative
-from sqlalchemy import ext
-from sqlalchemy import orm
 import logging
 import dotenv
-import asyncio
 import base_library
 
 dotenv.load_dotenv('./.env')

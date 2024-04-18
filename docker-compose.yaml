@@ -1,0 +1,66 @@
+version: '3.9'
+
+services:
+    postgresql-database:
+        image: postgres:latest
+        env_file:
+            - path: ./volumes/postgresql/postgres.env
+        restart: unless-stopped
+        expose: 
+            - "5432:5432"
+        volumes:
+            - ./volumes/postgresql/data:/var/lib/postgresql/data/pgdata
+            - ./volumes/postgresql/postgres.conf:/etc/postgresql.conf 
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U admin -d postgres"]
+            interval: 10s
+            timeout: 30s
+            retries: 5
+            start_period: 10s
+
+    postgresql-admin:
+        image: dpage/pgadmin4:7.2
+        env_file:
+            - path: ./volumes/postgres-admin/postgres-admin.env
+        volumes:
+            - ./volumes/postgres-admin/data:/var/lib.pgadmin
+        expose:
+            - "6000:80"
+        restart: unless-stopped
+        depends_on:
+            postgresql-database:
+                condition: service_healthy
+
+    nginx:
+        image: nginx:latest
+        ports:
+            - "6001:80"
+        restart: unless-stopped
+        volumes:
+            - ./volumes/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+            - ./volumes/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+            - ./volumes/nginx/sites-enabled:/etc/nginx/sites-enabled:ro
+            - ./volumes/nginx/ssl:/etc/nginx/ssl
+            - ./volumes/nginx/var/www:/var/www
+        depends_on:
+            tracks-service:
+                condition: service_started
+            postgresql-admin:
+                condition: service_started
+        
+    tracks-service:
+        build:
+            context: ./
+            dockerfile: ./tracks-service/Dockerfile
+        restart: on-failure
+        command: uvicorn Main:fastapi_app --reload --host 0.0.0.0 --port 6002 --log-config ./log.ini
+        env_file:
+            - path: ./volumes/tracks-service/tracks-service.env
+        volumes:
+            - ./tracks-service/app.log:/app/app.log
+        expose:
+            - "6002:6002"
+        depends_on:
+            postgresql-database:
+                condition: service_healthy
+
