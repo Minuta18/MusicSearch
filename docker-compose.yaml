@@ -24,8 +24,8 @@ services:
             - path: ./volumes/postgres-admin/postgres-admin.env
         volumes:
             - ./volumes/postgres-admin/data:/var/lib.pgadmin
-        expose:
-            - "6000:80"
+        ports:
+            - "6015:80"
         restart: unless-stopped
         depends_on:
             postgresql-database:
