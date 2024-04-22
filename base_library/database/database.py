@@ -1,16 +1,19 @@
 import sqlalchemy
 import typing
+import logging
 from sqlalchemy.ext import asyncio
 from sqlalchemy import orm
 
 def init_connection(database_url: str) -> tuple[typing.Any, typing.Any]:
-    engine = asyncio.create_async_engine(database_url)
-    session = orm.sessionmaker(
-        bind=engine,
-        class_=asyncio.AsyncSession,
-        expire_on_commit=False,
-    )
-    
+    try:
+        engine = asyncio.create_async_engine(database_url)
+        session = orm.sessionmaker(
+            bind=engine,
+            class_=asyncio.AsyncSession,
+            expire_on_commit=False,
+        )
+    except:
+        raise ConnectionError('Failed to establish database connection')
     return engine, session
 
 async def destroy_connection(engine: asyncio.AsyncEngine) -> None:

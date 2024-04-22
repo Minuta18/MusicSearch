@@ -5,6 +5,8 @@ import base_library
 
 dotenv.load_dotenv('./.env')
 
+logger = logging.getLogger(__name__)
+
 SERVICE_NAME = environ.get('SERVICE_NAME')
 
 PREFIX = environ.get('PREFIX', default='/api')
@@ -22,5 +24,10 @@ DATABASE_URL = 'postgresql+asyncpg://{}:{}@{}:{}/{}'.format(
 OPENAPI_URL = '{}/{}/openapi.json'.format(PREFIX, SERVICE_NAME)
 DOCS_URL = '{}/{}/docs'.format(PREFIX, SERVICE_NAME)
 
-engine, session = base_library.database.init_connection(DATABASE_URL)
-logger = logging.getLogger(__name__)
+try:
+    engine, session = base_library.database.init_connection(DATABASE_URL)
+    logger.info('Database connection initialized successfully')
+except ConnectionError:
+    logger.error('Can not establish database connection')
+    
+

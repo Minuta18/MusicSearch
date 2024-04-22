@@ -53,7 +53,7 @@ services:
             context: ./
             dockerfile: ./tracks-service/Dockerfile
         restart: on-failure
-        command: uvicorn Main:fastapi_app --reload --host 0.0.0.0 --port 6002 --log-config ./log.ini
+        command: uvicorn Main:fastapi_app --reload --host 0.0.0.0 --port 6002 --log-config ./log.ini --workers=4
         env_file:
             - path: ./volumes/tracks-service/tracks-service.env
         volumes:
