@@ -39,5 +39,18 @@ async def create_track_test():
         'origin_url': 'https://this.is.also.link',
     })
     
-    assert responce2.status_code == 409
+    assert responce2.status_code == 201
+    
+    responce2_json = responce2.json()
+    
+    assert responce2_json['error'] == False
+    assert responce2_json['track']['id'] is not None
+    assert responce2_json['track']['id'] != responce_json['track']['json']
+    assert responce2_json['track']['description'] == 'Another description'
+    assert responce2_json['track']['download_link'] is None
+    assert responce2_json['track']['length'] is None
+    assert responce2_json['track']['origin_url'] == \
+        'https://this.is.also.link'
+    assert responce2_json['track']['short_origin_url'] == \
+        'this.is.also.link'
     
